@@ -1,0 +1,64 @@
+.containermain {
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+    grid-template-rows: 1fr repeat(3, 1fr) 1fr;
+    height: 100vh;
+    width: 100vw;
+}
+
+.name {
+    display: grid;
+    background-color: gainsboro;
+    grid-column: 1/4;
+    font-size: 12px;
+}
+
+.leftsection {
+    background-color: blanchedalmond;
+    grid-area: 2/1/5/3;
+    display: grid;
+    grid-template-columns: 1fr, 1fr;
+}
+
+.mainsection1,
+.mainsection2,
+.mainsection3 {
+    background-color: yellow;
+    margin: 5px;
+    justify-self: stretch;
+}
+
+.mainsection1 {
+    grid-area: 2/1/3/2;
+}
+
+.mainsection2 {
+    grid-area: 2/2/3/3;
+}
+
+.mainsection3 {
+    grid-column: 1/3;
+}
+
+.rightsection {
+    background-color: greenyellow;
+    grid-area: 2/3/5/4;
+}
+
+.footersection {
+    display: grid;
+    background-color: gainsboro;
+    grid-column: 1/4;
+    grid-template-columns: repeat(4, 1fr);
+    gap: 5px;
+
+
+}
+
+.footersection1,
+.footersection2,
+.footersection3,
+.footersection4 {
+    background-color: white;
+    justify-self: center;
+}
