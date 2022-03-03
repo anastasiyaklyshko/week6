@@ -64,6 +64,7 @@
     grid-column: 1/5;
     grid-template-columns: repeat(5, 1fr);
     gap: 5px;
+    background-color: #B00000;
 
 
 }
@@ -71,6 +72,14 @@
 .footersection1,
 .footersection2,
 .footersection3,
-.footersection4 {
+.footersection4,
+.footersection5,
+.footersection6 {
     justify-self: center;
+    font-family: Inter;
+    font-style: normal;
+    font-weight: normal;
+    font-size: 16px;
+    line-height: 32px;
+    color: #E6E6E6;
 }
